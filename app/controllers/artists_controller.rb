@@ -1,9 +1,9 @@
 class ArtistsController < ApplicationController
 
-  def create 
+  def create
   end
 
-  def show 
+  def show
   end
 
   def edit
