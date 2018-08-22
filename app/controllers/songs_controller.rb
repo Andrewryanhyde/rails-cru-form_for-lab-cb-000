@@ -6,7 +6,7 @@ class SongsController < ApplicationController
   end
 
   def show
-    @song = Song.all
+    @songs = Song.all
   end
 
   def update
