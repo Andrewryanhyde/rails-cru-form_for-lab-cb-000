@@ -23,7 +23,9 @@ class GenresController < ApplicationController
     @genre = Genre.find_by_id(params[:id])
   end
 
-
+  def new
+    @genre = Genre.new
+  end
 
   private
 
