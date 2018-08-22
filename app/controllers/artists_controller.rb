@@ -2,6 +2,7 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = Artist.new
+    redirect_to artist_path(@artist)
   end
 
   def edit
