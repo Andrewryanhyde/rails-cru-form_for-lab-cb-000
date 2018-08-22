@@ -10,6 +10,17 @@ class ArtistsController < ApplicationController
   end
 
   def update
+    @artist = Artist.find(params[:id])
+    @artist.update()
   end
+
+
+  private 
+
+  def artist_params(*args)
+    params.require(:artist).permit(*args)
+  end
+    
+    
 
 end
