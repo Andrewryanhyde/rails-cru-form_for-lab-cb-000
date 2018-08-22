@@ -16,10 +16,9 @@ class ArtistsController < ApplicationController
     redirect_to artist_path(@artist)
   end
 
-  def index 
-    @artists = Artist.all 
+  def index
+    @artists = Artist.all
   end
-
 
 
   private

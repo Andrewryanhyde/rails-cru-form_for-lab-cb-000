@@ -15,6 +15,10 @@ class GenresController < ApplicationController
     redirect_to genre_path(@genre)
   end
 
+  def index
+    @genres = Genre.all
+  end
+
 
 
   private
